@@ -1,0 +1,47 @@
+{
+  "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
+  "version": "2.3.0",
+  "patches": [
+    {
+      "name": "Change Reddit share domain",
+      "description": "Rewrites generated Reddit share links to a custom domain of your choice.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.reddit.frontpage",
+          "name": "Reddit",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#FF4500",
+          "signatures": [
+            "970b91143813b4c9d5f3634f672c9fcaa5621b4efaaedafd6c235cbbb869736f"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "2026.46.0",
+              "versionCodes": null,
+              "isExperimental": true,
+              "minSdk": 29,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "customDomain",
+          "title": "Custom domain",
+          "description": "The domain to rewrite Reddit share links to (for example redlib.kareem.one).",
+          "required": false,
+          "type": "kotlin.String",
+          "default": "",
+          "values": {
+            "Default": ""
+          }
+        }
+      ]
+    }
+  ]
+}
