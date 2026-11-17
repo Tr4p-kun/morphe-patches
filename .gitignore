@@ -1,6 +1,9 @@
 # Private key that signs the patches file
 morphe-signing.key
 
+# Scratch / source material (nested git repo — do not upload)
+working patches/
+
 # Gradle files
 .gradle/
 build/
@@ -9,8 +12,8 @@ build/
 local.properties
 gradle.properties
 
-# Scratch / source material (nested git repo — do not upload)
-working patches/
+# Patch resources (original Morphe template resources — not part of this Reddit-only patch)
+patches/src/main/resources/
 
 # Reference archives
 archive/
